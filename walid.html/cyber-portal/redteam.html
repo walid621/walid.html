@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Red Team</title>
+  <style>
+    body {
+      font-family: "Tahoma", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff0f0;
+      color: #333;
+      line-height: 1.6;
+      direction: rtl;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff4d4d, #ff0000);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: #fff5f5;
+      padding: 1.8rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+    }
+
+    .card h2 {
+      color: #ff0000;
+      margin-top: 0;
+    }
+
+    .card p, .card ul {
+      margin-top: 0.5rem;
+    }
+
+    .card ul {
+      list-style-type: disc;
+      padding-right: 1.5rem;
+    }
+
+    .card:nth-child(odd) {
+      border-left: 6px solid #ff4d4d;
+    }
+
+    .card:nth-child(even) {
+      border-left: 6px solid #ff0000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #ff0000;
+      color: #fff;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🛡️ Red Team</h1>
+    <p>الدليل الكامل لفريق الهجوم في الأمن السيبراني</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>ما هو Red Team؟</h2>
+      <p>
+        فريق الـ Red Team هو الفريق الهجومي في الأمن السيبراني. دوره محاكاة هجمات حقيقية لاختبار قوة أنظمة الدفاع.
+        يهدف إلى كشف نقاط الضعف قبل أن يستغلها المخترقون الفعليون.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>أهداف Red Team</h2>
+      <ul>
+        <li>اكتشاف الثغرات الأمنية في الأنظمة والشبكات.</li>
+        <li>اختبار استجابة فرق الدفاع (Blue Team) للهجمات.</li>
+        <li>تقييم المخاطر وتحليل تأثير الهجمات على الأعمال.</li>
+        <li>تحسين إجراءات الأمن السيبراني بشكل مستمر.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>أدوات وتقنيات Red Team</h2>
+      <ul>
+        <li><strong>Metasploit:</strong> لاختبار الاختراق واستغلال الثغرات.</li>
+        <li><strong>Nmap:</strong> لفحص الشبكات واكتشاف الأجهزة والخدمات.</li>
+        <li><strong>Burp Suite:</strong> لاختبار ثغرات تطبيقات الويب.</li>
+        <li><strong>Social Engineering Toolkit:</strong> لمحاكاة هجمات الهندسة الاجتماعية.</li>
+        <li><strong>Wireshark:</strong> لتحليل حركة البيانات والتنصت على الترافيك.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>خطوات عمل Red Team</h2>
+      <ul>
+        <li>جمع المعلومات (Reconnaissance) عن الأهداف.</li>
+        <li>مسح الشبكة وتحديد الثغرات (Scanning & Enumeration).</li>
+        <li>استغلال الثغرات (Exploitation) لاختبار أنظمة الدفاع.</li>
+        <li>تقديم تقرير مفصل عن نقاط الضعف والتوصيات.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>أفضل الممارسات</h2>
+      <ul>
+        <li>التعاون مع فرق Blue Team لضمان تحسين الدفاعات.</li>
+        <li>استخدام بيئات اختبار آمنة (Lab) لتجنب التأثير على الإنتاج.</li>
+        <li>توثيق كل الخطوات والنتائج بدقة.</li>
+        <li>التحديث المستمر للأدوات والتقنيات الجديدة في مجال الاختراق الأخلاقي.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>خلاصة</h2>
+      <p>
+        Red Team هو القلب الهجومي للأمن السيبراني. دوره كشف الثغرات قبل المخترقين الفعليين وتحسين الدفاعات.
+        من خلال العمل مع أدوات وتقنيات متقدمة، يمكنه تقوية أمان الشبكات والتطبيقات وحماية البيانات الحساسة.
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Red Team Cybersecurity</p>
+  </footer>
+</body>
+</html>
+
+# اناwalid djalab مبرمج ومطور لهاذا ويب وتحياتي لقارئ مصدر هده الصفحة وشكرا
+
+
+# انتهى#
